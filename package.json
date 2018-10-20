@@ -1,0 +1,18 @@
+{
+  "name": "minifyjs-test",
+  "version": "0.0.1",
+  "description": "",
+  "main": "babel.js",
+  "dependencies": {
+    "terser": "^3.8.2",
+    "uglify-js": "^3.4.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "babel": "babel origin.js -o babled.js",
+    "mini:es5": "uglifyjs --mangle --mangle-props -o minify-babeled.js -b -c -- babeled.js",
+    "mini:es6": "terser --mangle --mangle-props -o minify-origin.js -b -c -- origin.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

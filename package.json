@@ -2,9 +2,9 @@
   "name": "minifyjs-test",
   "version": "0.0.1",
   "description": "",
-  "main": "babel.js",
   "dependencies": {
     "terser": "^3.8.2",
+    "uglify-es": "^3.3.9",
     "uglify-js": "^3.4.9"
   },
   "devDependencies": {},

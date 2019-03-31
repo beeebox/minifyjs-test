@@ -3,11 +3,15 @@
   "version": "0.0.1",
   "description": "",
   "dependencies": {
-    "terser": "^3.8.2",
+    "terser": "^3.17.0",
     "uglify-es": "^3.3.9",
     "uglify-js": "^3.4.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-transform-classes": "^7.4.0"
+  },
   "scripts": {
     "babel": "babel origin.js -o babled.js",
     "mini:es5": "uglifyjs --mangle --mangle-props -o minify-babeled.js -b -c -- babeled.js",
